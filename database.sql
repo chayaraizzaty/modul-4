@@ -1,0 +1,8 @@
+CREATE TABLE USERRS (
+    id_user SERIAL PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    role VARCHAR(50) NOT NULL
+);
+
+SELECT * FROM users;
