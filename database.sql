@@ -36,6 +36,12 @@ CREATE TABLE member (
 );
 
 ALTER TABLE member
+ALTER COLUMN kota SET NOT NULL,
+ALTER COLUMN alamat SET NOT NULL,
+ALTER COLUMN no_hp SET NOT NULL,
+ALTER COLUMN jenis_kelamin SET NOT NULL;
+
+ALTER TABLE member
 ALTER COLUMN id_user TYPE VARCHAR(20);
 
 -- admin
@@ -94,6 +100,10 @@ CREATE TABLE transaksi (
         FOREIGN KEY (id_admin)
         REFERENCES admin(id_admin)
 );
+
+ALTER TABLE transaksi
+ALTER COLUMN tgl_mulai SET NOT NULL,
+ALTER COLUMN tgl_berakhir SET NOT NULL;
 
 -- KARTU_MEMBER
 CREATE TABLE kartu_member (
@@ -379,5 +389,13 @@ FROM information_schema.tables
 WHERE table_schema = 'public'
 AND table_type = 'BASE TABLE'
 ORDER BY table_name;
+
+SELECT
+    column_name,
+    is_nullable,
+    data_type
+FROM information_schema.columns
+WHERE table_name = 'transaksi'
+  AND column_name IN ('tgl_mulai', 'tgl_berakhir');
 
 COMMIT;

@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="45" height="33" viewBox="0 0 45 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 2">
+<rect id="Card outline" x="1.25" y="1.25" width="42.5" height="30.5" rx="3.75" stroke-width="2.5" stroke="#141414"/>
+<circle id="Member head" cx="11.5" cy="9.5" r="2.4" stroke-width="2.2" stroke="#141414"/>
+<path id="Member shoulders" d="M5.5 24C5.5 19.5 8.5 17 11.5 17C14.5 17 17.5 19.5 17.5 24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke="#141414"/>
+<path id="Member detail" d="M25 11H37" stroke-width="2.2" stroke-linecap="round" stroke="#141414"/>
+<path id="Member detail_2" d="M25 19H33" stroke-width="2.2" stroke-linecap="round" stroke="#141414"/>
+</g>
+</svg>
